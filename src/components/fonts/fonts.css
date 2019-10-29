@@ -1,0 +1,41 @@
+/*  police ecriture zodiac */
+@font-face {
+    font-family: 'ZodiacMix';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url('ZodiacMix.otf'), url('ZodiacMix.otf'),
+      url(ZodiacMix.otf) format('truetype');
+  }
+
+  /* constellation ne fonctionne pas pour le moment ... */
+  @font-face {
+    font-family: 'ConstellationsOstia';
+    font-style: normal;
+    /* font-weight: 100; */
+    src: url('ConstellationsOstia.ttf'), url('ConstellationsOstia.ttf'),
+      url(ConstellationsOstia.ttf) format('truetype');
+  }
+  /* fin police ecriture */
+  /* Police ecriture signe du zodiac */
+  .signe-zodiac{
+    font-family:'ZodiacMix' ;
+    font-size: 80px;;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-left: 180px;
+  }
+  .constellations{
+    font-family:'ConstellationsOstia' ;
+    font-size: 80px;;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-left: 180px;
+  }
+  /* 
+  span{
+  font-family: 'Constellations Ostia' ;
+  font-size: 80px;
+  }*/
+  
