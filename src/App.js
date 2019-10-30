@@ -6,17 +6,18 @@ import Ambiance from './components/ambiance';
 
 
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  
+  render(){
+    return (
+     <div className="App">
       <Ambiance/>
-       <Switch>
-        <Route exact path="/" component={Header} />
-       
-      </Switch>
-    
-    </div>
-  );
+        <Switch>
+          <Route exact path="/" component={Header} />         
+        </Switch>
+      </div>
+    );
+    }
 }
 
 export default App;
