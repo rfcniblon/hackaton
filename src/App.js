@@ -1,23 +1,17 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from "react-router-dom";
-import Header from './components/Header';
-
-
+// import { Switch, Route } from "react-router-dom";
+import Navbar1 from './components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-       <Switch>
-        <Route exact path="/" component={Header} />
-       
-      </Switch>
+
+      <Navbar1 />
     
     </div>
   );
 }
 
 export default App;
-//<Route path="/ContactUs" component={ContactForm} />
-//<Route path="/erreur404" component={Erreur404} />
-   //     <Route path="/Team" component={Team} />
