@@ -4,17 +4,19 @@ import { Switch, Route } from "react-router-dom";
 import Header from './components/Header';
 
 
-
-function App() {
-  return (
-    <div className="App">
-       <Switch>
-        <Route exact path="/" component={Header} />
+class App extends React.Component {
+  
+  render(){
+    return (
+     <div className="App">
+        <Switch>
+          <Route exact path="/" component={Header} />         
        
-      </Switch>
+        </Switch>
     
-    </div>
-  );
+      </div>
+    );
+    }
 }
 
 export default App;
