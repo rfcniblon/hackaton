@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route } from "react-router-dom";
-import Header from './components/Header';
+import Distrib from './components/distributeur/Distrib';
 import Ambiance from './components/ambiance';
 import Navbar1 from './components/Navbar';
 
@@ -14,7 +14,7 @@ class App extends React.Component {
       <Ambiance/>
       <Navbar1 />
         <Switch>
-          <Route exact path="/" component={Header} />         
+          <Route exact path="/" component={Distrib} />         
         </Switch>
       </div>
     );

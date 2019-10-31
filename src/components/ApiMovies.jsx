@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import './distributeur/Distrib.css'
 
 class ApiMovies extends React.Component {
     constructor(props) {
@@ -33,7 +33,7 @@ class ApiMovies extends React.Component {
                 {this.state.movies === null ? <p>Loading...</p> :  
                     <div>
                         
-                        <img src={this.state.movies.posterUrl} alt={this.state.movies.title} />
+                        <img className="jacquette" src={this.state.movies.posterUrl} alt={this.state.movies.title} />
                     </div>
                 }
 
