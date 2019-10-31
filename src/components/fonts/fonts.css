@@ -33,9 +33,11 @@
     margin: 0;
     margin-left: 180px;
   }
-  /* 
-  span{
-  font-family: 'Constellations Ostia' ;
-  font-size: 80px;
-  }*/
+
+  @font-face {
+    font-family: 'JACKLB';
+    /* font-style: normal; */
+    src: url('JACKLB.TTF'), url('JACKLB.TTF'),
+      url(JACKLB.TTF) format('truetype');
+  }
   
