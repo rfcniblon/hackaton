@@ -1,16 +1,24 @@
 import React from 'react';
 import './App.css';
-import './components/css/reset.css';
+import { Switch, Route } from "react-router-dom";
+import Header from './components/Header';
+import Ambiance from './components/ambiance';
 import Navbar1 from './components/Navbar';
 
-function App() {
-  return (
-    <div className="App">
 
+class App extends React.Component {
+  
+  render(){
+    return (
+     <div className="App">
+      <Ambiance/>
       <Navbar1 />
-    
-    </div>
-  );
+        <Switch>
+          <Route exact path="/" component={Header} />         
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
